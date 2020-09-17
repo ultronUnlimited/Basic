@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <style>
+	.container
+{
+  max-width: 100%;
+}
+body
+{
+	margin: 0;
+	font-family:'ubantu', sans-serif;
+	font-size: 1.125rem;
+}
+#header{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 75px;
+}
+#header-img
+{
+  width: 400px;
+  justify-content: space-around;
+}
+nav{
+  display: flex;
+  justifi-content: right;
+}
+ul{
+  list-style: none;
+	display: flex;
+	justify-content: ;
+	padding: 1;
+}
+li{
+  list-style: none;
+  margin: 0 2rem;
+}
+nav a
+{
+	text-decoration: none;
+	color: black;
+	padding: .25rem 0;
+}
+h2{
+	
+	text-align: center;
+}
+.hero{
+	padding: 80px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+#email{
+	max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+}
+.btn
+{
+	max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px ;
+    border: 0;
+    background-color: #f1c40f;
+}
+#features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-heading{
+  text-align:left;
+}
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+.grid {
+    display: flex;
+	flex-direction: column;
+	
+	margin: auto;
+	align-items: center;
+}
+.sub-grid
+{
+	display: flex;
+	flex-direction: row;
+}
+#description{
+	display: flex;
+    flex-direction: column;
+    justify-content: left;
+	text-align: left;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+	width: 100%;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (max-width: 800px){
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width: 650px)
+{
+  #header{
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px){
+  #pricing {
+    flex-direction: column;
+}
+}
+
+  </style>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div class="container">
+    <header id="header"> 
+    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
+      <nav id="nav-bar">
+        <ul>
+		<li>
+			<a class="nav-link" href="#features">Features</a>
+		</li>
+		<li>
+			<a class="nav-link" href="#how-it-works">How It Works</a>
+		</li>
+		<li>
+			<a class="nav-link" href="#pricing">Pricing</a>
+		</li>
+	</ul>
+      </nav>
+      
+    </header>
+    <section class="hero">
+	<h2>Handcrafted, home-made masterpieces</h2>
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+      <input id="submit" type="submit" value="Get Started" class="btn">
+    </form>
+</section>
+    <section id="features">
+	<div class="grid">
+		<div class="sub-grid">
+		<div class="icon">
+			<i class="fa fa-fire" style="font-size:48px;color:orange"></i>
+		</div>
+		<div id="description">
+			<h2 class="feature-heading">Premium Materials</h2>
+			<p>
+				Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+			</p>
+		</div>
+		</div>
+		<div class="grid">
+		<div class="sub-grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div id="description">
+          <h2 class="feature-heading">Fast Shipping</h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div></div>
+      </div>
+	  <div class="grid">
+	  <div class="sub-grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div id="description">
+          <h2 class="feature-heading">Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+	</div>
+	</div>
+</section>
+<section id="how-it-works">
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+</div>
+  
+  </body>
+</html>
+
